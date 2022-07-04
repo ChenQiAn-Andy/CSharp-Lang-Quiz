@@ -89,7 +89,7 @@
     int? a = new int?( );
     object o = a;
     var b = ( int? ) o;
-    var c = ( int ) o;
+    //var c = ( int ) o;
 }
 
 // 12.下列代码中var关键字使用有何错误?
