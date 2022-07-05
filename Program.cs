@@ -118,3 +118,9 @@
     int?[ ] arr=new int?[ 4 ] {1,2,3,null };
     string str = string.Join( "," , arr );
 }
+
+// 15.下列程序输出值多少？
+{
+    var arr = "#,".Split( "," );
+    Console.WriteLine( arr.Count( ) );
+}
