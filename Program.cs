@@ -112,3 +112,9 @@
     int[ , ] a = new int[ 2 , 8 ];
     int[ ][ ] b = new int[ 8 ][ ];
 }
+
+// 14.将下列arr数组拼接，汇报编译时错误吗？
+{
+    int?[ ] arr=new int?[ 4 ] {1,2,3,null };
+    string str = string.Join( "," , arr );
+}
