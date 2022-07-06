@@ -121,6 +121,18 @@
 
 // 15.下列程序输出值多少？
 {
-    var arr = "#,".Split( "," );
-    Console.WriteLine( arr.Count( ) );
+    var arr1 = "#,".Split( "," );
+    Console.WriteLine( $"arr1.Length={arr1.Length}" );
+
+    var arr2 = " ".Substring( 0 , 1 ).Split( "," );
+    Console.WriteLine( $"arr2.Length={arr2.Length}" );
+
+    var arr3 = " ".Substring( 0 , 0 ).Split( "," );
+    Console.WriteLine( $"arr3.Length={arr3.Length}" );
+
+    var arr4 = " ".Substring( 1 , 1 ).Split( "," );
+    Console.WriteLine( $"arr4.Length={arr4.Length}" );
+
+    var arr5 = " ".Substring( 2 ).Split( "," );
+    Console.WriteLine( $"arr4.Length={arr5.Length}" );
 }
