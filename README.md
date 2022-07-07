@@ -1,5 +1,5 @@
 ## C#语法测试题 ##
-记录了**.NET 6.0** 下遇到的各种错误、小常识，答案在 *Program.cs* 文件中。
+记录了<B>.NET 6.0</B> 下遇到的各种错误、小常识，答案在 *Program.cs* 文件中。
 
 1.以下代码有什么问题？
 
@@ -51,6 +51,8 @@
             this.a = a;
             b = 4.0;
         }
+
+		~Sub(){ }
     }
 
 7.填写内插字符串，保留4位小数打印浮点数
@@ -95,3 +97,41 @@
 
     int[ , ] a = new int[ 2 , 8 ];
     int[ ][ ] b = new int[ 8 ][ ];
+
+14.将下列arr数组拼接，汇报编译时错误吗？
+
+	int?[ ] arr=new int?[ 4 ] {1,2,3,null };
+    string str = string.Join( "," , arr );
+
+15.下列程序输出值多少？
+
+	var arr1 = "#,".Split( "," );
+    Console.WriteLine( $"arr1.Length={arr1.Length}" );
+
+    var arr2 = "####".Substring( 0 ).Split( "," );
+    Console.WriteLine( $"arr2.Length={arr2.Length},{arr2[0]}" );
+
+    var arr3 = " ".Substring( 0 , 0 ).Split( "," );
+    Console.WriteLine( $"arr3.Length={arr3.Length}" );
+
+    var arr4 = " ".Substring( 1 , 1 ).Split( "," );
+    Console.WriteLine( $"arr4.Length={arr4.Length}" );
+
+    var arr5 = " ".Substring( 2 ).Split( "," );
+    Console.WriteLine( $"arr4.Length={arr5.Length}" );
+
+    var arr6 = " ".Substring( 0, -1 ).Split( "," );
+    Console.WriteLine( $"arr4.Length={arr6.Length}" );
+
+16.下面枚举定义有什么问题？
+
+	public enum Week
+	{
+	    Mon = 01,
+	    Tue = 02,
+	    Wed = 03,
+	    THI = 04,
+	    FR = 05,
+	    SAT = 06,
+	    SUN = 07
+	}
