@@ -135,3 +135,13 @@
 	    SAT = 06,
 	    SUN = 07
 	}
+
+17.下面函数定义有什么问题？
+
+	void Foo( params string[ ] props=null,int id=0) 
+    {
+    }
+
+    void Goo(string name = null , Base b = new Sub( ) )
+    {
+    }
