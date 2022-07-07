@@ -139,3 +139,15 @@
     //var arr6 = " ".Substring( 0, -1 ).Split( "," );
     //Console.WriteLine( $"arr4.Length={arr6.Length}" );
 }
+
+// 16.下面枚举定义有什么问题？
+public enum Week
+{
+    Mon = 01,
+    Tue = 02,
+    Wed = 03,
+    THI = 04,
+    FR = 05,
+    SAT = 06,
+    SUN = 07
+}
