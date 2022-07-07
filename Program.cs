@@ -163,3 +163,30 @@
     //{
     //}
 }
+
+// 18.下面函数调用中的命名实参有什么问题？
+{
+    void Dump(int x,int y,int z )
+    {
+        Console.WriteLine( $"{x},{y},{z}" );
+    }
+
+    Dump( y: 2 , 1 , z: 3 );
+    Dump( 1 , x: 2 , y: 3 );
+}
+
+// 19.下述程序打印结果是？
+{
+    void Dump( int x , int y , int z )
+    {
+        Console.WriteLine( $"{x},{y},{z}" );
+    }
+
+    Func<int , int> Log = value =>
+    {
+        Console.WriteLine( value );
+        return value;
+    };
+
+    Dump( z: Log( 3 ) , y: Log( 2 ) , x: Log( 1 ) );
+}
