@@ -190,3 +190,10 @@
 
     Dump( z: Log( 3 ) , y: Log( 2 ) , x: Log( 1 ) );
 }
+
+// 20.填空，以统计arr数组偶数个数.
+{
+    int[ ] arr= new int[ ] { 1 , 4 , 3 , 5 , 5 , 4 };
+    int num = arr.Where( e => e %2==0 ).Count();
+    int num2 = arr.Count( e => e % 2 == 0 );
+}
