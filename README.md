@@ -176,3 +176,8 @@
     int[ ] arr= new int[ ] { 1 , 4 , 3 , 5 , 5 , 4 };
     int num = arr.Where( ______ ).Count();
     int num2 = arr.Count( ______ );
+
+21.简述一下访问权限修饰符有和特点.
+
+	protected internal : ____________
+	private protected  : ____________
