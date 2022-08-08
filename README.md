@@ -90,6 +90,7 @@
 	var a=1,b=2; 
 	var obj=null;
 	var arr={2,3,4};
+	const var src=(8,11,2,7);
 	var func=e=>e+1;
 	public delegate var Foo(var o);
 
